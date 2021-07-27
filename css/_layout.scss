@@ -3,10 +3,31 @@
   flex-direction: $direction;
 }
 
+// HEADER
+header {
+  position: fixed;
+  width: 100%;
+}
+
+// FOOTER NAVBAR
+footer {
+  ul {
+    @include flex;
+    justify-content: space-around;
+  }
+  li a {
+    @include flex(column);
+    align-items: center;
+  }
+  position: fixed;
+  bottom: 0px;
+}
+
 // HOMEPAGE
 .homepage {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: [header-start] 75px [header-end] auto [footer-start] 75px [footer-end];
   gap: 10px;
   position: relative;
 
@@ -14,20 +35,8 @@
     max-width: 100%;
   }
 
-  header {
-    grid-column: 1 / 13;
-    grid-row: 1 / 5;
-  }
-
   main {
     grid-column: 2 / 12;
-  }
-
-  footer {
-    ul {
-      @include flex;
-    }
-    position: fixed;
-    bottom: 1rem;
+    grid-row: 2 / 3;
   }
 }

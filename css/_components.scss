@@ -1,10 +1,31 @@
+// HEADER
 header {
-  background-color: #262626;
-  color: #cdcdcd;
+  background-color: $main-color;
+  color: $light-font-color;
+  padding: 0.5rem;
 }
 
+// FOOTER NAVBAR
 footer {
+  background-color: $light-background-color;
+  color: $main-color;
+  width: 100%;
+  padding: 0.5rem;
   ul {
     list-style-type: none;
+  }
+  li {
+    color: $main-color;
+    background-color: $light-background-color;
+    padding: 0 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  p {
+    font-size: 8px;
+    font-weight: bold;
+    padding: 0.5rem 0 0 0;
   }
 }
