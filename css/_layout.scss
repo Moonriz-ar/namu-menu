@@ -1,0 +1,33 @@
+@mixin flex($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+// HOMEPAGE
+.homepage {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  position: relative;
+
+  img {
+    max-width: 100%;
+  }
+
+  header {
+    grid-column: 1 / 13;
+    grid-row: 1 / 5;
+  }
+
+  main {
+    grid-column: 2 / 12;
+  }
+
+  footer {
+    ul {
+      @include flex;
+    }
+    position: fixed;
+    bottom: 1rem;
+  }
+}
