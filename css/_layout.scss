@@ -23,20 +23,32 @@ footer {
   bottom: 0px;
 }
 
-// HOMEPAGE
-.homepage {
+// GENERAL LAYOUT
+.grid-container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: [header-start] 75px [header-end] auto [footer-start] 75px [footer-end];
+  grid-template-rows: [header-start] 100px [header-end] auto [footer-start] 75px [footer-end];
   gap: 10px;
   position: relative;
+  .grid-child {
+    grid-column: 2 / 12;
+    grid-row: 2 / 3;
+  }
+}
 
+// HOMEPAGE
+.homepage {
   img {
     max-width: 100%;
   }
+}
 
-  main {
-    grid-column: 2 / 12;
-    grid-row: 2 / 3;
+// MENU
+.menu {
+  img {
+    max-width: 100%;
+  }
+  .flex-container {
+    @include flex(column);
   }
 }
