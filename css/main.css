@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,14 +11,14 @@
 }
 
 a {
-  color: #171717;
+  color: #cdcdcd;
   text-decoration: none;
 }
 
 a:hover,
 a:active,
 a:visited {
-  color: #171717;
+  color: #cdcdcd;
   text-decoration: none;
   cursor: pointer;
 }
@@ -85,14 +85,25 @@ footer li a {
 header {
   background-color: #171717;
   color: #cdcdcd;
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+header h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+header h3 {
+  font-size: 0.7rem;
+  padding: 0 0 0 0.5rem;
+  font-weight: 200;
 }
 
 footer {
-  background-color: #ededed;
-  color: #171717;
+  background-color: #171717;
   width: 100%;
-  padding: 0.5rem;
 }
 
 footer ul {
@@ -100,25 +111,18 @@ footer ul {
 }
 
 footer li {
-  color: #171717;
-  background-color: #ededed;
-  padding: 0 15px;
-  cursor: pointer;
   font-size: 16px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  padding: 0.5rem;
 }
 
 footer p {
-  font-size: 8px;
-  font-weight: bold;
+  font-size: 12px;
   padding: 0.5rem 0 0 0;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  color: #292929;
 }
 
 .homepage main h2 {

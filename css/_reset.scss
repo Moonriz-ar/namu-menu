@@ -11,14 +11,14 @@
 }
 
 a {
-  color: $main-color;
+  color: $light-font-color;
   text-decoration: none;
 }
 
 a:hover,
 a:active,
 a:visited {
-  color: $main-color;
+  color: $light-font-color;
   text-decoration: none;
   cursor: pointer;
 }
