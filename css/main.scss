@@ -135,5 +135,9 @@ body {
       font-size: $secondary-font-size;
       padding: 0.5rem 0 2rem 0;
     }
+
+    em {
+      font-weight: bold;
+    }
   }
 }

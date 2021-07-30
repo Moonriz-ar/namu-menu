@@ -286,4 +286,8 @@ body {
   font-size: 14px;
   padding: 0.5rem 0 2rem 0;
 }
+
+.menu .menu-content em {
+  font-weight: bold;
+}
 /*# sourceMappingURL=main.css.map */
