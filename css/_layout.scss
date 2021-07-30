@@ -7,6 +7,7 @@
 header {
   position: fixed;
   width: 100%;
+  z-index: 5;
 }
 
 // FOOTER NAVBAR
@@ -53,13 +54,14 @@ footer {
   }
 }
 
-// DESKTOP LAYOUT 
+// LAPTOP LAYOUT
 @media only screen and (min-width: 450px) and (max-width: 1024px) {
   .grid-child {
     margin: 0 20%;
   }
 }
 
+// DESKTOP LAYOUT
 @media only screen and (min-width: 1025px) {
   .grid-child {
     margin: 0 35%;

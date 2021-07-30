@@ -26,6 +26,7 @@ a:visited {
 header {
   position: fixed;
   width: 100%;
+  z-index: 5;
 }
 
 footer {
@@ -216,7 +217,7 @@ body {
 }
 
 .menu .tab-label:hover {
-  background: #cb0b0c;
+  background: #f21718;
 }
 
 .menu .tab-label::after {
@@ -251,11 +252,11 @@ body {
 }
 
 .menu .tab-close:hover {
-  background: #cb0b0c;
+  background: #f21718;
 }
 
 .menu input:checked + .tab-label {
-  background: #cb0b0c;
+  background: #f21718;
 }
 
 .menu input:checked + .tab-label::after {
@@ -264,7 +265,7 @@ body {
 }
 
 .menu input:checked ~ .tab-content {
-  max-height: 100vh;
+  max-height: 5000px;
   padding: 1.5rem;
 }
 
@@ -274,15 +275,15 @@ body {
 
 .menu .menu-content h3 {
   font-size: 20px;
-  padding: 0.5rem 0 0 0;
+  padding: 0.5rem 0 0.25rem 0;
 }
 
 .menu .menu-content .price {
   font-size: 20px;
 }
 
-.menu .menu-content p {
+.menu .menu-content .description {
   font-size: 14px;
-  padding: 0.25rem 0 0 0;
+  padding: 0.5rem 0 2rem 0;
 }
 /*# sourceMappingURL=main.css.map */

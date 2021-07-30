@@ -71,7 +71,7 @@ body {
       cursor: pointer;
       // ICONO
       &:hover {
-        background: darken($secondary-color, 20%);
+        background: darken($secondary-color, 10%);
       }
       &::after {
         content: "\276F";
@@ -96,7 +96,7 @@ body {
       background: $secondary-color;
       cursor: pointer;
       &:hover {
-        background: darken($secondary-color, 20%);
+        background: darken($secondary-color, 10%);
       }
     }
   }
@@ -105,13 +105,13 @@ body {
   input:checked {
     // cambia direccion del icono, solo del tab que se selecciono
     + .tab-label {
-      background: darken($secondary-color, 20%);
+      background: darken($secondary-color, 10%);
       &::after {
         transform: rotate(90deg);
       }
     }
     ~ .tab-content {
-      max-height: 100vh;
+      max-height: 5000px;
       padding: 1.5rem;
     }
   }
@@ -124,16 +124,16 @@ body {
 
     h3 {
       font-size: $header-font-size;
-      padding: 0.5rem 0 0 0;
+      padding: 0.5rem 0 0.25rem 0;
     }
 
     .price {
       font-size: $header-font-size;
     }
 
-    p {
+    .description {
       font-size: $secondary-font-size;
-      padding: 0.25rem 0 0 0;
+      padding: 0.5rem 0 2rem 0;
     }
   }
 }
