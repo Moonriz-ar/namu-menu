@@ -144,6 +144,14 @@ body {
 
 // Ruleta
 .ruleta {
+  .card {
+    background-color: $light-background-color;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 2.5%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+
   main h2 {
     font-size: $header-font-size;
     padding: 0 0 0.5rem 0;
