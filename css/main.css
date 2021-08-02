@@ -290,4 +290,14 @@ body {
 .menu .menu-content em {
   font-weight: bold;
 }
+
+.ruleta main h2 {
+  font-size: 20px;
+  padding: 0 0 0.5rem 0;
+}
+
+.ruleta main p {
+  font-size: 14px;
+  padding: 0 0 1.5rem 0;
+}
 /*# sourceMappingURL=main.css.map */
